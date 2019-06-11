@@ -8,6 +8,8 @@ metadata:
   name: {{ template "fullname" . }}
 {{- end }}
   labels:
+    snappyflow/compname: custiomm
+    snappyflow/appname: staging123456-stage
     chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
 spec:
   runLatest:
